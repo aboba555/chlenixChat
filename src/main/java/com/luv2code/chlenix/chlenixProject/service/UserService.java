@@ -10,5 +10,6 @@ import java.util.List;
 public interface UserService {
     User save(UserDto userDto);
     List<User> getAllUsers();
+    void deleteById(int theId);
 
 }
