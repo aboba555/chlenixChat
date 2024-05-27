@@ -27,7 +27,7 @@
                         <form action="#!" method="post" th:action="@{/login}" role="form" th:object="${user}">
                             <div th:if="${param.error}">
                                 <div class="alert alert-danger col-xs-offset-1 col-xs-10">
-                                    Invalid username or password.
+                                    Invalid email or password.
                                 </div>
                             </div>
                             <div th:if="${param.logout}">

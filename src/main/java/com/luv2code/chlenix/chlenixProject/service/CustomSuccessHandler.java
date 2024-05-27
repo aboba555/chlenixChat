@@ -22,7 +22,7 @@ public class CustomSuccessHandler implements AuthenticationSuccessHandler {
             } else if (roles.orElse("").equals("USER")) {
                 response.sendRedirect("/chat");
             } else {
-                response.sendRedirect("/error");
+                response.sendRedirect("/login");
             }
     }
 }
